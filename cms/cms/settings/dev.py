@@ -11,8 +11,10 @@ ALLOWED_HOSTS = ["*"]
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
-try:
-    from .local import *
-except ImportError:
-    pass
+
+# try:
+#     from .local import *
+# except ImportError:
+#     pass
